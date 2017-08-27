@@ -1,0 +1,99 @@
+div {       
+			position:absolute;
+			width:px;
+			top:40px;
+    }
+
+#outer
+{
+    border: 2px solid #798484;
+    	height: 400px;
+        width:300px;
+        top:123;
+        left:500px;
+    
+        position:absolute;
+}
+#army
+{
+    font-size: 28;
+    top: 10;
+    left:55;
+}
+
+#log
+{
+    font-family:monospace;
+    font-size: 22;
+    top: 120;
+    left: 50;
+}
+#mail
+{
+    font-family: sans-serif;
+    top:150;
+    left:50;
+}
+    input[type="email"]
+        {
+        position:absolute;
+        top:180;
+        left:50;
+        }
+#pass
+{
+    font-family: sans-serif;
+   top: 210;
+    left: 50;
+}
+    input[type="password"]
+        {
+        position:absolute;
+        left:50;
+        top:240;
+        }
+    input[type="checkbox"]
+        {
+        position:absolute;
+        left:50;
+        top:270;
+        }
+#keep
+{
+    font-family: sans-serif;
+    top: 270;
+    left: 80;
+}
+
+#login
+{
+    font-size:13;
+    top: 340;
+    left: 95;
+}
+    input[type="submit"]
+        {
+        background-color: antiquewhite;
+        height: 30;
+        position:absolute;
+        width: 210;
+        left:50;
+        top:300;
+        cursor:pointer; // to change the submit button cursor hover act  
+        }
+#new
+{
+    border: 2px solid #d1c6c6;
+    background-color:antiquewhite;
+    top:360;
+    left: 50;
+    height: 25;
+    width: 210;
+    text-align: center;
+}
+a
+{
+    color: inherit; //to change link color from blue to black 
+    display: block; //to make whole div as a link
+    
+} 
