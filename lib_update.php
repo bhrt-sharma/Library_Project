@@ -11,7 +11,7 @@ mysqli_close($con);
 <!DOCTYLE html>
 <html>
 <head>
-    <title>ALL BOOKS</title>
+    <title>Update Records</title>
     <style>
     #tablu
         {
@@ -34,6 +34,7 @@ mysqli_close($con);
     </style>
     </head>
 <body>
+    <form id="formu" action="lib_updation.php" method="post">
     <table id="tablu">
         <tr>
             <td><strong>Book_Id</strong></td>
@@ -49,18 +50,21 @@ mysqli_close($con);
         ?>
         
         <tr>
-        <td> <?php  echo $r_result['bookid'] ?> </td>
-        <td> <?php  echo $r_result['Title'] ?> </td>
-        <td> <?php  echo $r_result['Price'] ?> </td>
-        <td> <?php  echo $r_result['Author'] ?> </td>
+        <td> <?php  echo $r_result['bookid']; ?>
+            <input type="hidden" name="bookid<?php echo $i; ?>" value="<?php  echo $r_result['bookid'] ?>"</td>
+        <td> <input type="text" name="title<?php echo $i; ?>" value="<?php  echo $r_result['Title'] ?>" </td>
+        <td> <input type="text" name="price<?php echo $i; ?>" value="<?php  echo $r_result['Price'] ?>" </td>
+        <td> <input type="text" name="author<?php echo $i; ?>" value="<?php  echo $r_result['Author'] ?>"</td>
         </tr>
         
         <?php
         }
         ?>
-        
-        <div id="dash"> <a href="lib_home.php" > Back to dashboard??</a></div>
+        <tr>
+        <td colspan="4"> <input type="submit" value="Update??"> </td>
+        </tr>    
     </table>
-    
+    </form>
+    <div id="dash"> <a href="lib_home.php" > Back to dashboard??</a></div>
 </body>
 </html>

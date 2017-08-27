@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $total=sizeof($_POST);//sizeof() ye ek function hota hai jo ki size batata hai ki =kitnai elemnt bejai gaye hai from ke through.
 $total=$total-1;
 $j=1;

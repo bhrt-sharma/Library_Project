@@ -1,4 +1,5 @@
 <?php
+session_start();
 $t=$_POST['title'];
 $p=$_POST['price'];
 $a=$_POST['author'];
